@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  osm:
+    build:
+      context: .
+    restart: always
+    container_name: planetosm_updater
+    devices:
+      - "/dev/fuse"
+    cap_add:
+      - SYS_ADMIN
+    environment:
+       - TWITTER_CONSUMER_KEY=
+       - TWITTER_CONSUMER_SECRET=
+       - TWITTER_ACCESS_TOKEN=
+       - TWITTER_ACCESS_TOKEN_SECRET=
+       - OS_AUTH_URL=https://identity.tyo1.conoha.io/v2.0
+       - OS_TENANT_ID=
+       - OS_TENANT_NAME=
+       - OS_USERNAME=
+       - OS_PASSWORD=
