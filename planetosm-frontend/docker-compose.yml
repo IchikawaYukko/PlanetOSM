@@ -1,0 +1,6 @@
+# Debug Environment
+services:
+  debug:
+    image: node:20-alpine
+    volumes:
+      - .:/app
