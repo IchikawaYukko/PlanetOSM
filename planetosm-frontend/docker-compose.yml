@@ -4,3 +4,4 @@ services:
     image: node:20-alpine
     volumes:
       - .:/app
+    command: tail -f &
