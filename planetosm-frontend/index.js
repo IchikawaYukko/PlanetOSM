@@ -1,16 +1,5 @@
 const pkgcloud = require('pkgcloud');
-const credentials = {
-    provider: 'openstack',
-    username: '????????',
-    password: '????????',
-    tenantId: '????????',
-    region: 'tyo1',
-    authUrl: 'https://identity.tyo1.conoha.io/'
-};
-const settings = {
-    "containerName": "PlanetOSM",
-    "serviceUrl": "https://object-storage.tyo1.conoha.io/v1/nc_????????"
-}
+const { credentials, settings } = require('./settings.cjs')
 
 const getfilesPromise = (container, client) => new Promise ((resolve, reject) => {
     client.getFiles(container, (err, file) => {

@@ -1,0 +1,17 @@
+const credentials = {
+    provider: 'openstack',
+    username: 'gncu********',
+    password: '',
+    tenantId: '',
+    region: 'tyo1',
+    authUrl: 'https://identity.tyo1.conoha.io/'
+};
+const settings = {
+    "containerName": "PlanetOSM",
+    "serviceUrl": "https://object-storage.tyo1.conoha.io/v1/nc_********************"
+}
+
+module.exports = {
+    credentials:credentials,
+    settings:settings,
+}
