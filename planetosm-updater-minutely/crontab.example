@@ -1,0 +1,2 @@
+* * * * * cd /dvd/planetosm/minute && ./download.sh $(cat state.txt ) 2>> $(date +\%Y\%W).log && expr $(cat state.txt) + 1 > state.txt
+
